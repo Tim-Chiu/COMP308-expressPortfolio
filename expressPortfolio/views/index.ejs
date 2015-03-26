@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/app.css">
+  </head>
+  <body>
+    <% include partials/header.ejs %>
+    
+    <%    if(title == "About Me")  {%>
+    <%    include partials/about.ejs %>
+    <%    }  %>     
+    
+    
+    <% include partials/footer.ejs %>
+    
+    
+    <script src="/Scripts/lib/jquery.js"></script>
+    <script src="/Scripts/lib/bootstrap.min.js"></script>
+    <script src="/Scripts/lib/angular.min.js"></script>
+    <script src="/Scripts/app.js"></script>
+  </body>
+</html>
